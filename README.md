@@ -1,40 +1,23 @@
-# My Portfolio Website
- This repository contains the code for my personal portfolio website. The website is built using HTML, SCSS, CSS, and Javascript. It showcases my skills and experience in web development, design, and frontend development.
- 
- 
- 
-Getting Started
-To get started, clone the repository to your local machine:
+# Portfolio Website
 
-Code snippet
-git clone https://github.com/[your-username]/portfolio-website.git
-Use code with caution. Learn more
-Then, install the dependencies:
+This repository contains the source code for a portfolio website. The website contains information about my skills and qualifications, along with examples of my work.
 
-Code snippet
-npm install
-Use code with caution. Learn more
-Finally, start the development server:
+## Installation
 
-Code snippet
-npm run dev
-Use code with caution. Learn more
-The website will be available at http://localhost:8000.
+To get started, clone this repository down and open it up in your favorite code editor.
 
-Features
-The portfolio website includes the following features:
+## Usage
 
-A homepage that showcases my skills and experience
-A projects page that lists my past projects
-A contact page where visitors can get in touch with me
-Technologies
-The portfolio website is built using the following technologies:
+Open `index.html` to run the website. You'll have access to the portfolio pages, as well as some additional features.
 
-React
-Gatsby
-TypeScript
-Sass
-GraphQL
-MongoDB
-Contact
-If you have any questions or feedback, please feel free to contact me at [your-email-address].
+## Contributing
+
+If you find any bugs or have any feedback, feel free to create an issue or pull request. 
+
+## Credits
+
+This project was created by [Your Name], using HTML, CSS, and JavaScript. 
+
+## License
+
+This project is available under the [MIT license](LICENSE).
