@@ -1,6 +1,6 @@
 # Portfolio Website
 
-This repository contains the source code for a portfolio website. The website contains information about my skills and qualifications, along with examples of my work.
+This repository contains the source code for a portfolio website. The website contains information about my skills, experience and qualifications, along with examples of my work.
 
 ## Installation
 
@@ -16,8 +16,4 @@ If you find any bugs or have any feedback, feel free to create an issue or pull 
 
 ## Credits
 
-This project was created by Erick Omondi, using HTML, CSS, and JavaScript. 
-
-## License
-
-This project is available under the [MIT license](LICENSE).
+This project was created by Erick Omondi, using HTML, CSS, and JavaScript.
