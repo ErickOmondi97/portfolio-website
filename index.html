@@ -27,18 +27,99 @@
   </div>
 </div>
 
+<!--ABOUT-->
+
 <div id="about">
   <div class="container">
     <div class="row">
       <div class="about-col-1">
-        <img src="" alt="" class="">
+        <img src="/images/5.jpg" alt="" class="">
       </div>
       <div class="about-col-2">
-        <h1>About Me</h1>
+        <h1 class="subtitle">About Me</h1>
+        <p>
+          I am a motivated, adaptable, and responsible frontend web developer. I have effective oral and written communication skills, which would facilitate good understanding between the employees and myself. My leadership skills, teamwork spirit, and problem-solving techniques would help in the conceptualization and implementation of logical strategies to help an organization attain its fundamental objectives and foster a positive organizational culture.
+        </p>
+
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+          <p class="tab-links" onclick="opentab('experience')">Experience</p>
+          <p class="tab-links" onclick="opentab('education')">Education</p>
+        </div>
+
+        <div class="tab-contents active-tab" id="skills">
+          <ul>
+            <li><span>UI/UX</span><br>Designing Websites</li>
+            <li><span>Web Development</span><br>Web App Development</li>
+            <li><span>App Development</span><br>Building Android/iOS Apps</li>
+          </ul>
+        </div>
+        
+        <div class="tab-contents" id="experience">
+          <ul>
+            <li><span>2022 - Present</span><br>Small Business Owner</li>
+            <li><span>2020 - 2022</span><br>Freelance Writer</li>
+            <li><span>August 2019 - November 2019</span><br>Attache</li>
+          </ul>
+        </div>
+
+        <div class="tab-contents" id="education">
+          <ul>
+            <li><span>2015 - 2019</span><br>Jomo Kenyatta University of Agriculture and Technology</li>
+            <li><span>2010 - 2014</span><br>Thurdibuoro Mixed Secondary School</li>
+            <li><span>2007 - 2010</span><br>Ortum Boys Boarding Primary School</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--SERVICES-->
+<div id="services">
+  <div class="container">
+    <h1 class="subtitle">My Services</h1>
+    <div class="services-list">
+      <div>
+        <i class="fas fa-code"></i>
+        <h2>Web Design</h2>
+        <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+        <a href="#">learn more</a>
+      </div>
+      
+      <i class="fas fa-crop"></i>
+      <div>
+        <h2>UI/UX Design</h2>
+        <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+        <a href="#">learn more</a>
+      </div>
+      
+      <i class="fas fa-app-store"></i>
+      <div>
+        <h2>UI/UX Design</h2>
+        <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+        <a href="#">learn more</a>
       </div>
     </div>
   </div>
 </div>
 
 </body>
+
+<script lang="javascript">
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+
+  function opentab(tabname){
+    for(tablink of tablinks){
+      tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+      tabcontent.classList.remove("active-tab");
+    }
+
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+  }
+</script>
 </html>
