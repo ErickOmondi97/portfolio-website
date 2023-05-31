@@ -1,0 +1,18 @@
+#services {
+  padding: 30px 0;
+}
+
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+
+  div {
+    background: $tertiary-color-alt;
+    padding: 40px;
+    font-size: 12px;
+    font-weight: map-get($font-weights, small);
+    border-radius: 10px;
+  }
+}
