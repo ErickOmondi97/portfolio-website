@@ -16,7 +16,7 @@ If you find any bugs or have any feedback, feel free to create an issue or pull 
 
 ## Credits
 
-This project was created by [Your Name], using HTML, CSS, and JavaScript. 
+This project was created by Erick Omondi, using HTML, CSS, and JavaScript. 
 
 ## License
 
