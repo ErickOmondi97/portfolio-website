@@ -156,17 +156,17 @@
 #portfolio {
   padding: 5px 0;
   font-size: 12px;
-  margin-bottom: 20%;
 }
 #portfolio .work {
   border-radius: 10px;
   position: relative;
   overflow: hidden;
+  transition: all 0.5s ease-in-out;
 }
 #portfolio .work .layer {
   width: 100%;
-  height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.9), #006eff);
+  height: 0%;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), #006eff);
   border-radius: 10px;
   position: absolute;
   left: 0;
@@ -178,6 +178,28 @@
   flex-direction: column;
   padding: 0 40px;
   text-align: center;
+  transition: all 0.5s ease-in-out;
+}
+#portfolio .work .layer h3 {
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+#portfolio .work .layer a {
+  margin-top: 20px;
+  color: #006eff;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 60px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+}
+#portfolio .work:hover {
+  transform: scale(1.1);
+}
+#portfolio .work:hover .layer {
+  height: 100%;
 }
 #portfolio .work-list {
   display: grid;
@@ -191,6 +213,35 @@
   display: block;
 }
 
+.btn {
+  display: block;
+  margin: 50px auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 1px solid #006eff;
+  padding: 14px 50px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+.btn:hover {
+  background: #006eff;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact-left {
+  flex-basis: 35%;
+}
+.contact-right {
+  flex-basis: 60%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -201,6 +252,7 @@
 body {
   background: #000000;
   color: #fff;
+  margin-bottom: 10%;
 }
 
 #header {
