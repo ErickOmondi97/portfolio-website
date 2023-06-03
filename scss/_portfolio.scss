@@ -1,18 +1,17 @@
 #portfolio {
   padding: 5px 0;
   font-size: 12px;
-  margin-bottom: 20%;
-
 
   .work {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+    @include transition-ease;
 
     .layer {
       width: 100%;
-      height: 100%;
-      background: linear-gradient(rgba(0,0,0,0.9), $primary-color);
+      height: 0%;
+      background: linear-gradient(rgba(0,0,0,0.1), $primary-color);
       border-radius: 10px;
       position: absolute;
       left: 0;
@@ -24,6 +23,33 @@
       flex-direction: column;
       padding: 0 40px;
       text-align: center;
+      @include transition-ease;
+
+      h3 {
+        font-weight: map-get($font-weights, regular);
+        margin-bottom: 20px;
+      }
+
+      a {
+        margin-top: 20px;
+        color: $primary-color;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 60px;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        text-align: center;
+
+      }
+    }
+
+    &:hover {
+      transform: scale(1.1);
+
+      .layer {
+        height: 100%;
+      }
     }
   }
 
@@ -38,5 +64,22 @@
     width: 100%;
     border-radius: 10px;
     display: block;
+  }
+}
+
+.btn {
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 1px solid $primary-color;
+  padding: 14px 50px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: $secondary-color;
+  @include transition-ease;
+
+  &:hover {
+    background: $primary-color;
+
   }
 }
