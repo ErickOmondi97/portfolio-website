@@ -9,186 +9,187 @@
   <script src="https://kit.fontawesome.com/85bc907f45.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<div id="header">
-  <div class="container">
-    <nav>
-      <a href="#"><img src="/images/logo_no-bg.png" alt="logo" class="logo"></a>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contacts</a></li>
-      </ul>
-    </nav>
+  <header>
+      <div id="header">
+        <div class="container">
+          <nav>
+            <a href="#"><img src="/images/logo.png" alt="logo" class="logo"></a>
+            <ul id="sidemenu">
+              <li><a href="#header">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#portfolio">Projects</a></li>
+              <li><a href="#contact">Contacts</a></li>
+              <i class="fas fa-times" onclick="closemenu"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu"></i>
+          </nav>
 
-    <div class="header-text">
-      <h1>Hello, I am <span>Erick</span> Omondi <br> from Nairobi, Kenya.</h1>
-      <p>Web Designer</p>
+        <div class="header-text">
+          <h1>Hello, I am <span>Erick</span> Omondi <br> from Nairobi, Kenya.</h1>
+          <p>Web Designer</p>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
+  </header>
 
 <!--ABOUT-->
-
-<div id="about">
-  <div class="container">
-    <div class="row">
-      <div class="about-col-1">
-        <img src="/images/5.jpg" alt="" class="">
-      </div>
-      <div class="about-col-2">
-        <h1 class="subtitle">About Me</h1>
-        <p>
-          I am a motivated, adaptable, and responsible frontend web developer. I have effective oral and written communication skills, which would facilitate good understanding between the employees and myself. My leadership skills, teamwork spirit, and problem-solving techniques would help in the conceptualization and implementation of logical strategies to help an organization attain its fundamental objectives and foster a positive organizational culture.
-        </p>
-
-        <div class="tab-titles">
-          <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-          <p class="tab-links" onclick="opentab('experience')">Experience</p>
-          <p class="tab-links" onclick="opentab('education')">Education</p>
+<main>
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="/images/5.jpg" alt="" class="">
         </div>
+        <div class="about-col-2">
+          <h1 class="subtitle">About Me</h1>
+          <p>
+            I am a motivated, adaptable, and responsible frontend web developer. I have effective oral and written communication skills, which would facilitate good understanding between the employees and myself. My leadership skills, teamwork spirit, and problem-solving techniques would help in the conceptualization and implementation of logical strategies to help an organization attain its fundamental objectives and foster a positive organizational culture.
+          </p>
 
-        <div class="tab-contents active-tab" id="skills">
-          <ul>
-            <li><span>UI/UX</span><br>Designing Websites</li>
-            <li><span>Web Development</span><br>Web App Development</li>
-            <li><span>App Development</span><br>Building Android/iOS Apps</li>
-          </ul>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>UI/UX</span><br>Designing Websites</li>
+              <li><span>Web Development</span><br>Web App Development</li>
+              <li><span>App Development</span><br>Building Android/iOS Apps</li>
+            </ul>
+          </div>
+          
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>2022 - Present</span><br>Small Business Owner</li>
+              <li><span>2020 - 2022</span><br>Freelance Writer</li>
+              <li><span>August 2019 - November 2019</span><br>Attache</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2015 - 2019</span><br>Jomo Kenyatta University of Agriculture and Technology</li>
+              <li><span>2010 - 2014</span><br>Thurdibuoro Mixed Secondary School</li>
+              <li><span>2007 - 2010</span><br>Ortum Boys Boarding Primary School</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--SERVICES-->
+  <div id="services">
+    <div class="container">
+      <h1 class="subtitle">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fas fa-code"></i>
+          <h2>Web Design</h2>
+          <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+          <a href="#">Learn more</a>
         </div>
         
-        <div class="tab-contents" id="experience">
-          <ul>
-            <li><span>2022 - Present</span><br>Small Business Owner</li>
-            <li><span>2020 - 2022</span><br>Freelance Writer</li>
-            <li><span>August 2019 - November 2019</span><br>Attache</li>
-          </ul>
+        
+        <div>
+          <i class="fas fa-crop"></i>
+          <h2>UI/UX Design</h2>
+          <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+          <a href="#">Learn more</a>
         </div>
-
-        <div class="tab-contents" id="education">
-          <ul>
-            <li><span>2015 - 2019</span><br>Jomo Kenyatta University of Agriculture and Technology</li>
-            <li><span>2010 - 2014</span><br>Thurdibuoro Mixed Secondary School</li>
-            <li><span>2007 - 2010</span><br>Ortum Boys Boarding Primary School</li>
-          </ul>
+        
+        
+        <div>
+          <i class="fa-brands fa-app-store"></i>
+          <h2>UI/UX Design</h2>
+          <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+          <a href="#">Learn more</a>
         </div>
       </div>
     </div>
   </div>
-</div>
 
-<!--SERVICES-->
-<div id="services">
-  <div class="container">
-    <h1 class="subtitle">My Services</h1>
-    <div class="services-list">
-      <div>
-        <i class="fas fa-code"></i>
-        <h2>Web Design</h2>
-        <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
-        <a href="#">Learn more</a>
-      </div>
-      
-      
-      <div>
-        <i class="fas fa-crop"></i>
-        <h2>UI/UX Design</h2>
-        <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
-        <a href="#">Learn more</a>
-      </div>
-      
-      
-      <div>
-        <i class="fa-brands fa-app-store"></i>
-        <h2>UI/UX Design</h2>
-        <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
-        <a href="#">Learn more</a>
-      </div>
-    </div>
-  </div>
-</div>
+  <!--PORTFOLIO-->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="subtitle">My Work</h1>
+      <div class="work-list">
+        <div class="work">        
+            <img src="/images/ler-website.png" alt="laundry website images">
+            <div class="layer">
+              <h3>Business Website</h3>
+              <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+              <a href="#"><i class="fab fa-github"></i>Github</a>
+              <a href="#"><i class="fas fa-eye"></i>Preview</a>
+            </div>
+        </div>
+        
 
-<!--PORTFOLIO-->
-<div id="portfolio">
-  <div class="container">
-    <h1 class="subtitle">My Work</h1>
-    <div class="work-list">
-      <div class="work">        
-          <img src="/images/ler-website.png" alt="laundry website images">
+        <div class="work">
+          <img src="" alt="" class="img">
           <div class="layer">
             <h3>Business Website</h3>
-            <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+            <p>Lorem ipsum Lorem ipsum Lorem</p>
             <a href="#"><i class="fab fa-github"></i>Github</a>
             <a href="#"><i class="fas fa-eye"></i>Preview</a>
           </div>
-      </div>
-      
+        </div>
 
-      <div class="work">
-        <img src="" alt="" class="img">
-        <div class="layer">
-          <h3>Business Website</h3>
-          <p>Lorem ipsum Lorem ipsum Lorem</p>
-          <a href="#"><i class="fab fa-github"></i>Github</a>
-          <a href="#"><i class="fas fa-eye"></i>Preview</a>
+        <div class="work">
+          <img src="" alt="" class="img">
+          <div class="layer">
+            <h3>Business Website</h3>
+            <p>Lorem ipsum Lorem ipsum Lorem</p>
+            <a href="#">
+              <i class="fab fa-github"></i>Github
+            </a>
+
+            <a href="#"><i class="fas fa-eye"></i>Preview</a>
+          </div>
         </div>
       </div>
 
-      <div class="work">
-        <img src="" alt="" class="img">
-        <div class="layer">
-          <h3>Business Website</h3>
-          <p>Lorem ipsum Lorem ipsum Lorem</p>
-          <a href="#">
-            <i class="fab fa-github"></i>Github
-          </a>
+      <a href="#" class="btn">See more</a>
+    </div>
+  </div>
 
-          <a href="#"><i class="fas fa-eye"></i>Preview</a>
+  <!--CONTACT ME-->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fas fa-paper-plane"></i> eriqueomondi1997@gmail.com</p>
+          <p><i class="fas fa-phone-square-alt"></i>+254728537964</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+          <a href="" class="btn-2" download>Download CV</a>
+        </div>
+
+        <div class="contact-right">
+          <form>
+            <input type="text" name="First Name" placeholder="First Name" required autocomplete>
+            <input type="text" name="Second Name" placeholder="Second Name" required autocomplete>
+            <input type="Email" name="email" placeholder="example@mail.com" required autocomplete>
+            <textarea name="Message" rows="6" placeholder="Type your message here..."></textarea>
+            <button type="submit" class="btn-3">Submit</button>
+          </form>
+          <span id="msg">Hello</span>
         </div>
       </div>
     </div>
-
-    <a href="#" class="btn">See more</a>
   </div>
-</div>
+</main>
 
-<!--CONTACT ME-->
-<div id="contact">
-  <div class="container">
-    <div class="row">
-      <div class="contact-left">
-        <h1 class="sub-title">Contact Me</h1>
-        <p>eriqueomondi1997@gmail.com</p>
-        <p>+254728537964</p>
-        <div class="social-icons">
-          <a href="#"><i class="fab fa-facebook"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-linkedin"></i></a>
-        </div>
-      </div>
-
-      <div class="contact-right">
-        <form>
-          <input type="text" name="First Name" placeholder="First Name" required>
-          <input type="text" name="Second Name" placeholder="Second Name" required>
-          <input type="email" name="email" placeholder="example@mail.com" required>
-          <textarea name="Message" rows="6" placeholder="Type your message here..."></textarea>
-          <button type="submit">Submit</button>
-        </form>
-      </div>
-
-      <!-- <div class="contact-right">
-        <form>
-          <input type="text" name="Name" placeholder="Your Name" required>
-          <input type="text" name="email" placeholder="Your Email" required>
-          <textarea name="Message" placeholder="Type Your Message">
-            <button type="submit">Submit</button>
-          </textarea>
-        </form>
-      </div> -->
-    </div>
-  </div>
-</div>
+<footer>
+  <p>Copyright &copy; Created By Erick Omondi</p>
+</footer>
 
 </body>
 
