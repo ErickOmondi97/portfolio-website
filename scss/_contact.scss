@@ -7,9 +7,55 @@
 .contact {
   &-left {
     flex-basis: 35%;
+
+    i {
+      color: $primary-color;
+      margin-right: 15px;
+      font-size: 25px;
+    }
   }
 
   &-right {
     flex-basis: 60%;
+
+    form {
+      width: 100%;
+      
+      input, textarea {
+        width: 100%;
+        border: 0;
+        outline: none;
+        background: $tertiary-color-alt;
+        padding: 15px;
+        margin: 15px 0;
+        color: $secondary-color;
+        font-size: 18px;
+        border-radius: 6px; 
+      }
+
+      .btn-3 {
+        padding: 14px 30px;
+        font-size: 18px;
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .social-icons {
+    margin-top: 30px;
+
+    a {
+      text-decoration: none;
+      font-size: 30px;
+      margin-right: 15px;
+      color: $secondary-color;
+      display: inline-block;
+      @include transition-ease;
+
+      &:hover {
+        color: $primary-color;
+        translate: transformY(-5px);
+      }
+    }
   }
 }

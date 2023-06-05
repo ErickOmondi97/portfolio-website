@@ -1,0 +1,121 @@
+@media only screen and (max-width: 600px){
+  #header {
+    background-image: url(/images/9.jpg);
+    height: 100vh;
+    width: 100%;
+    justify-self: center;
+  }
+
+  .header-text {
+    margin-top: 100%;
+    font-size: 16px;
+
+    h1 {
+      font-size: 30px;
+    }
+
+    p{
+      font-size: 20px;
+    }
+  }
+
+  .container {
+    nav {
+      .logo {
+        width: 50%;
+      }
+
+      .fas {
+        display: block;
+        font-size: 25px;
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+      }
+
+      ul {
+        background: $primary-color;
+        position: fixed;
+        top: 0;
+        right: -255px;
+        width: 255px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+
+        li {
+          display: block;
+          margin: 25px;
+        }
+      }
+    }
+  }
+
+  #about {
+    .row {
+      .about {
+        &-col-2 {
+          font-size: 14px;
+          .subtitle {
+            font-size: 40px;
+          }
+
+          .tab-links {
+            font-size: 16px;
+            margin-right: 20px;
+          }
+        }
+        
+        &-col-1, &-col-2 {
+          flex-basis: 100%;
+        }
+
+        &-col-1 {
+          margin-bottom: 30px;
+        }
+        
+      }
+    }
+  }
+
+  #services {
+    .container {
+      .services-list {
+        display: grid;
+        grid-template-columns: none;    
+      }
+    }
+  }
+
+  #portfolio {
+    .work-list {
+      display: grid;
+      grid-template-columns: none;
+    }
+    .work {
+      img {
+        width: 100%;
+        border-radius: 10px;
+        display: block;
+      }
+    }
+  }
+
+  .contact {
+    &-right {
+      form {
+        width: 80vw;
+
+        .btn-2, .btn-3 {
+          width: 50vw;
+        }
+      }
+    }
+  }
+
+  footer {
+    font-size: 14px;
+  }
+}
