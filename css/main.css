@@ -118,6 +118,97 @@
   border-radius: 15px;
 }
 
+#header-about {
+  height: 50vh;
+  width: 100%;
+  background: url(/images/9.jpg);
+  background-size: cover;
+}
+#header-about .subtitle {
+  text-align: center;
+  margin-top: 7.5%;
+}
+
+.about {
+  padding: 80px 0;
+  color: #ababab;
+}
+.about .container .row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about .container .row .about-col-1 {
+  flex-basis: 35%;
+}
+.about .container .row .about-col-1 p {
+  margin-top: 10px;
+}
+.about .container .row .about-col-2 {
+  flex-basis: 60%;
+}
+.about .container .row .subtitle {
+  text-align: center;
+}
+.about .container .jobs {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+.about .container .jobs__job {
+  padding: 15px;
+  border-bottom: none;
+  border-radius: 10px;
+}
+.about .container .jobs__job:hover {
+  cursor: pointer;
+  border: 0.5px dotted #006eff;
+}
+.about .container .jobs__job h2, .about .container .jobs__job h3 {
+  margin: 10px 0;
+}
+.about .container .jobs__job h4 {
+  margin: 7px 0;
+}
+.about .container .jobs__job ul {
+  margin-left: 20px;
+}
+.about .container .jobs .tab-titles {
+  display: flex;
+  margin: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+.about .container .jobs .tab-links {
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+.about .container .jobs .tab-links::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #006eff;
+  display: block;
+  left: 0;
+  transition: all 0.5s ease-in-out;
+}
+.about .container .jobs .tab-links.active-link::after {
+  width: 100%;
+}
+.about .container .jobs .tab-contents {
+  display: none;
+}
+.about .container .jobs .tab-contents.active-tab {
+  display: block;
+}
+.about img {
+  width: 75%;
+  border-radius: 15px;
+}
+
 #services {
   padding: 30px 0;
 }
@@ -229,6 +320,11 @@
 }
 .btn:hover {
   background: #006eff;
+}
+
+#portfolio .container .subtitle {
+  text-align: center;
+  margin-top: 10px;
 }
 
 .row {
@@ -440,4 +536,8 @@ footer {
   background: #262626;
   font-weight: 300;
   margin-top: 20px;
+  font-size: 14px;
+}
+footer .social-icons {
+  margin: 5px;
 }/*# sourceMappingURL=main.css.map */
