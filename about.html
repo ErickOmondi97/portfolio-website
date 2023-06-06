@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erick Omondi | Web Developer</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="https://kit.fontawesome.com/85bc907f45.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <header>
+      <div id="header-about">
+        <div class="container">
+          <nav>
+            <a href="#"><img src="/images/logo.png" alt="logo" class="logo"></a>
+            <ul id="sidemenu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="contact.html">Contacts</a></li>
+              <i class="fas fa-times" onclick="closemenu"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu"></i>
+          </nav>
+          <h1 class="subtitle">About Me</h1>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="about">
+        <div class="container">
+          <div class="row">
+            <div class="about-col-1">
+              <img src="/images/5.jpg" alt="profile-image" class="">              
+              <p>
+                I am a motivated, adaptable, and responsible frontend web developer. I have effective oral and written communication skills, which would facilitate good understanding between the employees and myself. My leadership skills, teamwork spirit, and problem-solving techniques would help in the conceptualization and implementation of logical strategies to help an organization attain its fundamental objectives and foster a positive organizational culture.
+              </p>
+            </div>
+
+            <div class="about-col-2">
+              <h2 class="subtitle">My Work Experience</h2>
+              <div class="jobs">
+                
+                <div class="tab-titles">
+                  <p class="tab-links active-link" onclick="opentab('2022 - 2023')">2023</p>
+                  <p class="tab-links" onclick="opentab('2020 - 2022')">2022</p>
+                  <p class="tab-links" onclick="opentab('2020 - 2022')">2021</p>
+                  <p class="tab-links" onclick="opentab('2020 - 2022')">2020</p>
+                  <p class="tab-links" onclick="opentab('2019')">2019</p>
+                  <p class="tab-links" onclick="opentab('2017', '2017-2')">2017</p>
+                </div>
+
+
+                <div class="tab-contents active-tab" id="2022 - 2023">
+                  <div class="jobs__job">
+                    <!-- <h2 class="text-secondary">2023</h2> -->
+                    <h3>Ler Laun-Dry Services, 28th October 2022-Present</h3>
+                    <h4>Small Business Owner</h4>
+                    <p>My key roles are: <br>
+                      <ul>
+                        <li>Ensuring that the laundry services are high quality and meet customer expectations. This includes monitoring customer feedback, resolving complaints, and implementing quality assurance processes.</li>
+                        <li>Managing the business’s financials, including budgeting, forecasting, and reporting.</li>
+                        <li>Managing the business’s day-to-day operations, including staffing, inventory management, and customer service.</li>
+                        <li>Creating an effective marketing strategy to attract customers and build brand awareness. This could include developing a website, creating an advertising budget, and utilizing social media platforms.</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="tab-contents" id="2020 - 2022">
+                  <div class="jobs__job">
+                    <!-- <h2 class="text-secondary">2020 - 2022</h2> -->
+                    <h3>Freelance.com, 5th December 2020 - 28th October 2022</h3>
+                    <h4>Freelance Writer</h4>
+                    <p>My key roles are: <br>
+                      <ul>
+                        <li>Researching the latest trends and technologies in web development and adhering to the relevant client needs to create accurate and current content.</li>
+                        <li>Editing content for clarity and accuracy, ensuring it is properly formatted and error-free.</li>
+                        <li>Reviewing written papers to ensure that it meets the client’s expectations.</li>
+                        <li>CPromoting written papers to ensure that it reaches their intended audience.</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="tab-contents" id="2019">
+                  <div class="jobs__job">
+                    <!-- <h2 class="text-secondary">2019</h2> -->
+                    <h3>National Land Commission, 5th August 2019- 8th November 2019</h3>
+                    <h4>Attaché</h4>
+                    <p>Worked as an attaché at the National Land Commission. My key roles were: <br>
+                      <ul>
+                        <li>Research and profiling status of development in counties including application of information technology in county services.</li>
+                        <li>Proposal and Report writing.</li>
+                        <li>Application of policies and legal frameworks related to web development.</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="tab-contents" id="2017">
+                  <div class="jobs__job">
+                    <!-- <h2 class="text-secondary">2017</h2> -->
+                    <h3>Digital Democracy, 1st August 2017- 31st August 2017</h3>
+                    <h4>Volunteer</h4>
+                    <p>Worked as a volunteer at Digital Democracy. My key roles were:<br>
+                      <ul>
+                        <li>Designing, developing, and testing user interfaces for websites and web applications.</li>
+                        <li>Developing web applications using HTML5, CSS3, JavaScript, and jQuery.</li>
+                        <li>Building websites using frameworks such as Bootstrap, Node.js, and React.js.</li>
+                        <li>Optimizing and testing websites for maximum performance and compatibility.</li>
+                        <li>Understanding cross-browser compatibility and accessibility issues.</li>
+                        <li>Creating content for websites and web applications.</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="tab-contents" id="2017">
+                  <div class="jobs__job">
+                    <!-- <h2 class="text-secondary">2017</h2> -->
+                    <h3>Nairobi City Council, July 2017 - August 2017</h3>
+                    <h4>Attaché</h4>
+                    <p>Worked as an attaché at Nairobi City Council. My key roles were:<br>
+                      <ul>
+                        <li>Auditing Environment Impact Assessment reports and determining their adherence to implemented laws and policies.</li>
+                        <li>Understanding all web development processes and continually seeking opportunities for improvement by analyzing the web technologies and policies involved in such a process to understand how they affect the public.</li>
+                        <li>Evaluation of web design plans to determine their compliance with web development policies.</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Copyright &copy; Created By Erick Omondi</p>
+    </footer>
+
+  </body>
+
+  <script src="/js/main.js"></script>
+</html>
