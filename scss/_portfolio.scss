@@ -1,3 +1,4 @@
+//PORTFOLIO HOME PAGE
 #portfolio {
   padding: 5px 0;
   font-size: 12px;
@@ -81,5 +82,15 @@
   &:hover {
     background: $primary-color;
 
+  }
+}
+
+//PORTFOLIO PROJECTS PAGE
+#portfolio {
+  .container {
+    .subtitle {
+      text-align: center;
+      margin-top: 10px;
+    }
   }
 }

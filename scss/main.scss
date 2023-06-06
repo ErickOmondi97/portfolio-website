@@ -52,7 +52,7 @@ body {
   
   &:hover {
     background: $primary-color;
-    }
+  }
 }
 
 .btn-3 {
@@ -86,5 +86,10 @@ footer {
   background: $tertiary-color-alt;
   font-weight: map-get($font-weights, small);
   margin-top: 20px;
+  font-size: 14px;
+
+  .social-icons {
+    margin: 5px;
+  }
 }
 

@@ -1,3 +1,4 @@
+//HOME
 #about {
   padding: 80px 0;
   color: $alt-color;
@@ -76,4 +77,121 @@
   }
 
   
+}
+
+//ABOUT-PAGE
+#header-about {
+  height: 50vh;
+  width: 100%;
+  background: url(/images/9.jpg);
+  background-size: cover;
+
+  .subtitle {
+    text-align: center;
+    margin-top: 7.5%;
+  }
+}
+
+.about {
+  padding: 80px 0;
+  color: $alt-color;
+
+  .container {
+    .row {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      .about-col-1 {
+        flex-basis: 35%;
+
+        p {
+          margin-top: 10px;
+        }
+      }
+
+      .about-col-2 {
+        flex-basis: 60%;
+      }
+
+      .subtitle {
+        text-align: center;
+      }
+    }
+
+    .jobs {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 20px;
+
+      &__job {
+        //background: lighten($tertiary-color-alt, 10%);
+        padding: 15px;
+        border-bottom: none;
+        border-radius: 10px;
+
+        &:hover {
+          cursor: pointer;
+          border: 0.5px dotted $primary-color;
+          
+
+        }
+
+        h2, h3 {
+          margin: 10px 0;
+        }
+
+        h4 {
+          margin: 7px 0;
+        }
+
+        ul {
+          margin-left: 20px;
+        }
+      }
+
+      .tab {
+        &-titles {
+          display: flex;
+          margin: 20px;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        &-links {
+          margin-right: 50px;
+          font-size: 18px;
+          font-weight: map-get($font-weights, medium);
+          cursor: pointer;
+          position: relative;
+
+          &::after {
+            content: '';
+            width: 0;
+            height: 3px;
+            background: $primary-color;
+            display: block;
+            left: 0;
+            @include transition-ease;
+          }
+
+          &.active-link::after {
+            width: 100%;
+          }
+        }
+        &-contents {
+          display: none;
+
+          &.active-tab {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  img {
+    width: 75%;
+    border-radius: 15px;
+  }
 }
