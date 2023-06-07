@@ -50,10 +50,12 @@
   top: 50%;
   left: 50%;
   text-align: left;
-  transform: translate(0%, -75%);
 }
 .header-text h1 span {
   color: #006eff;
+}
+.header-text p {
+  margin-top: 50px;
 }
 
 #about {
@@ -155,38 +157,29 @@
   grid-template-columns: 1fr;
   grid-gap: 20px;
 }
-.about .container .jobs__job {
-  padding: 15px;
-  border-bottom: none;
-  border-radius: 10px;
-}
-.about .container .jobs__job:hover {
-  cursor: pointer;
-  border: 0.5px dotted #006eff;
-}
-.about .container .jobs__job h2, .about .container .jobs__job h3 {
+.about .container .jobs h2, .about .container .jobs h3 {
   margin: 10px 0;
 }
-.about .container .jobs__job h4 {
+.about .container .jobs h4 {
   margin: 7px 0;
 }
-.about .container .jobs__job ul {
+.about .container .jobs ul {
   margin-left: 20px;
 }
-.about .container .jobs .tab-titles {
+.about .container .tab-titles {
   display: flex;
   margin: 20px;
   flex-direction: column;
   align-items: center;
 }
-.about .container .jobs .tab-links {
+.about .container .tab-links {
   margin-right: 50px;
   font-size: 18px;
   font-weight: 500;
   cursor: pointer;
   position: relative;
 }
-.about .container .jobs .tab-links::after {
+.about .container .tab-links::after {
   content: "";
   width: 0;
   height: 3px;
@@ -195,16 +188,17 @@
   left: 0;
   transition: all 0.5s ease-in-out;
 }
-.about .container .jobs .tab-links.active-link::after {
+.about .container .tab-links.active-link::after {
   width: 100%;
 }
-.about .container .jobs .tab-contents {
+.about .container .tab-contents {
   display: none;
 }
-.about .container .jobs .tab-contents.active-tab {
+.about .container .tab-contents.active-tab {
   display: block;
 }
-.about img {
+
+img {
   width: 75%;
   border-radius: 15px;
 }
@@ -260,7 +254,7 @@
 #portfolio .work .layer {
   width: 100%;
   height: 0%;
-  background: linear-gradient(rgba(0, 0, 0, 0.1), #006eff);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), #006eff);
   border-radius: 10px;
   position: absolute;
   left: 0;
@@ -273,15 +267,21 @@
   text-align: center;
   transition: all 0.5s ease-in-out;
 }
+#portfolio .work .layer .fab {
+  color: #fff;
+}
+#portfolio .work .layer .fas {
+  color: #fff;
+}
 #portfolio .work .layer h3 {
   font-weight: 400;
   margin-bottom: 20px;
 }
 #portfolio .work .layer a {
   margin-top: 20px;
-  color: #006eff;
+  color: #fff;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 12px;
   line-height: 60px;
   width: 60px;
   height: 60px;
@@ -299,11 +299,16 @@
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 #portfolio img {
   width: 100%;
   border-radius: 10px;
   display: block;
+}
+#portfolio .img-ler {
+  display: flex;
+  width: 118%;
 }
 
 .btn {
@@ -325,6 +330,15 @@
 #portfolio .container .subtitle {
   text-align: center;
   margin-top: 10px;
+}
+
+#contact .container .contact-details {
+  text-align: left;
+}
+#contact .container .contact-details i {
+  color: #006eff;
+  margin-right: 15px;
+  font-size: 25px;
 }
 
 .row {
@@ -486,7 +500,7 @@ body {
 }
 
 .logo {
-  width: 140px;
+  width: 100%;
 }
 
 .btn-2 {
@@ -524,7 +538,7 @@ body {
 }
 
 #msg {
-  color: #61b752;
+  color: #82b8ff;
   margin-top: -40px;
   display: block;
 }
@@ -532,12 +546,21 @@ body {
 footer {
   width: 100%;
   text-align: center;
-  padding: 25px 0;
+  padding: 10px 0;
   background: #262626;
   font-weight: 300;
-  margin-top: 20px;
+  margin-top: 1px;
   font-size: 14px;
 }
 footer .social-icons {
   margin: 5px;
+  font-size: 12pt;
+}
+footer .social-icons .fab {
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+footer .social-icons .fab:hover {
+  color: #006eff;
+  transform: translateY(-3px);
 }/*# sourceMappingURL=main.css.map */
