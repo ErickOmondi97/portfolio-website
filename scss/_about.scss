@@ -124,19 +124,6 @@
       grid-template-columns: 1fr;
       grid-gap: 20px;
 
-      &__job {
-        //background: lighten($tertiary-color-alt, 10%);
-        padding: 15px;
-        border-bottom: none;
-        border-radius: 10px;
-
-        &:hover {
-          cursor: pointer;
-          border: 0.5px dotted $primary-color;
-          
-
-        }
-
         h2, h3 {
           margin: 10px 0;
         }
@@ -194,4 +181,3 @@
     width: 75%;
     border-radius: 15px;
   }
-}

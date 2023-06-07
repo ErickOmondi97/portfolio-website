@@ -1,3 +1,18 @@
+//CONTACT HOME PAGE
+#contact {
+  .container {
+    .contact-details {
+      text-align: left;
+      i {
+        color: $primary-color;
+        margin-right: 15px;
+        font-size: 25px;
+      }
+    }
+  }
+}
+
+//CONTACT PAGE
 .row {
   display: flex;
   justify-content: space-between;
