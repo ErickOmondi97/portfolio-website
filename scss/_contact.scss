@@ -4,9 +4,20 @@
     .contact-details {
       text-align: left;
       i {
-        color: $primary-color;
+        color: $secondary-color;
         margin-right: 15px;
         font-size: 25px;
+      }
+
+      .fas {
+        text-decoration: none;
+        line-height: 30px;
+      }
+
+      a {
+        text-decoration: none;
+        color: $secondary-color;
+        
       }
     }
   }

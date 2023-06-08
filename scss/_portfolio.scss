@@ -36,17 +36,17 @@
 
       h3 {
         font-weight: map-get($font-weights, regular);
-        margin-bottom: 20px;
+        margin-bottom: 10px;
       }
 
       a {
-        margin-top: 20px;
+        margin-top: 5px;
         color: $secondary-color;
         text-decoration: none;
         font-size: 12px;
-        line-height: 60px;
+        line-height: 50px;
         width: 60px;
-        height: 60px;
+        height: 10px;
         border-radius: 50%;
         text-align: center;
 
@@ -103,6 +103,12 @@
 #portfolio {
   .container {
     .subtitle {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    p {
+      font-size: 14px;
       text-align: center;
       margin-top: 10px;
     }
