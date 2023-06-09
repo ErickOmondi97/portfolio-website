@@ -3,18 +3,14 @@
 .container {
   padding: 10px 10%;
 
-  nav {
+  .nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 
     .logo {
-      width: 30%;
-    }
-
-    .fas {
-      display: none;
+      width: 100%;
     }
 
     ul {
@@ -22,6 +18,7 @@
         display: inline-block;
         list-style: none;
         margin: 10px 20px;
+
 
         a {
           color: $secondary-color;
@@ -49,3 +46,6 @@
     }
   }
 }
+
+
+//MENU BUTTON
