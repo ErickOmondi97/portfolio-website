@@ -12,20 +12,26 @@
 
   <body>
     <header>
-      <div id="header-about">
+      <div class="menu-btn">
+        <span class="menu-btn__burger"></span>
+      </div>
+      
+      <div id="header">
         <div class="container">
-          <nav>
+          <nav class="nav">
             <a href="#"><img src="/images/logo_no-bg.png" alt="logo" class="logo"></a>
-            <ul id="sidemenu">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="projects.html">Projects</a></li>
-              <li><a href="contact.html">Contacts</a></li>
-              <i class="fas fa-times" onclick="closemenu"></i>
-            </ul>
-            <i class="fas fa-bars" onclick="openmenu"></i>
+            <div class="menu-btn">
+              <span class="menu-btn__burger"></span>
+            </div>
+            <ul id="sidemenu" class="menu-nav">
+              <li class="menu-nav__item"><a href="index.html" class="menu-nav__link">Home</a></li>
+              <li class="menu-nav__item"><a href="about.html" class="menu-nav__link">About</a></li>
+              <li class="menu-nav__item"><a href="projects.html" class="menu-nav__link">Projects</a></li>
+              <li class="menu-nav__item active"><a href="contact.html" class="menu-nav__link">Contacts</a></li>
           </nav>
-          <h1 class="subtitle">Contact Me</h1>
+          <div class="header-text">
+            <h1 class="subtitle">Contacts</h1>
+          </div>          
         </div>
       </div>
     </header>
@@ -33,11 +39,15 @@
     <main>
       <div id="contact">
         <div class="container">
+          <h1 class="subtitle-2">My Contacts</h1>
+          <p class="exp__contact">This page displays my contacts incase you want to collaborate with me on a project, employ me to your organization, enquire about web related issues or hire me for a project.</p>
           <div class="row">
             <div class="contact-left">
-              <h1 class="sub-title">Contact Me</h1>
-              <p><i class="fas fa-paper-plane"></i><a href="mailto:eriqueomondi1997@gmail.com">eriqueomondi1997@gmail.com</a></p>
-              <p><i class="fas fa-phone-square-alt"></i><a href="tel:+254728537964">+254728537964</a></p>
+              <div class="contact-list">
+                <p><i class="fas fa-paper-plane"></i><a href="mailto:eriqueomondi1997@gmail.com">eriqueomondi1997@gmail.com</a></p>
+                <p><i class="fas fa-phone-square-alt"></i><a href="tel:254728537964">+254728537964</a></p>
+                <p><i class="fa-solid fa-location-dot fa-flip-horizontal"></i>Nairobi, Kenya</p>
+              </div>
             </div>
     
             <div class="contact-right">
