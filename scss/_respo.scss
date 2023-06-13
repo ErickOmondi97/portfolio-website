@@ -12,15 +12,23 @@
 
     h1 {
       font-size: 30px;
+      top: 50%;
+      left: 50%;
+      transform: translate(10%, -175px);
     }
 
     p{
       font-size: 20px;
+      top: 50%;
+      left: 50%;
+      transform: translate(10%, -150px);
     }
   }
 
   //MENU
-  .container {
+
+  //MENU ALT
+  /*.container {
     nav {
       .logo {
         width: 50%;
@@ -51,7 +59,7 @@
         overflow: hidden;
         background: $primary-color;
         list-style-type: none;
-        padding-right: 1rem;
+        padding-right: 10px;
         transform: translateY(-100%);
         @include transition-ease;
     
@@ -90,8 +98,8 @@
     .menu-btn {
       position: absolute;
       z-index: 1;
-      right: 10px;
-      top: 10px;
+      right: 20px;
+      top: 20px;
       height: 20px;
       width: 28px;
       cursor: pointer;
@@ -143,19 +151,14 @@
     }
 
     
-  }
-  
-  @for $i from 1 through 4 {
-    .menu-nav__item:nth-child(#{$i}) {
-      transition-delay: ($i * 0.1s) + 0.15s;}
-    }
+  } */
 
   //ABOUT  
   #about {
     .row {
       .about {
         &-col-2 {
-          font-size: 14px;
+          font-size: 14pt;
           .subtitle {
             font-size: 40px;
           }
@@ -173,8 +176,14 @@
         &-col-1 {
           margin-bottom: 30px;
         }
-        
       }
+    }
+  }
+
+  .about {
+    img {
+    width: 150%;
+    border-radius: 15px;
     }
   }
 
