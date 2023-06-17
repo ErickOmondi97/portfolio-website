@@ -15,7 +15,7 @@ var tabcontents = document.getElementsByClassName("tab-contents");
 
 
     //ALT FOR MENU BUTTON
-  /* var sidemenu = document.getElementById("sidemenu");
+  var sidemenu = document.getElementById("sidemenu");
 
   function openmenu(){
     sidemenu.style.right = "0";
@@ -23,10 +23,10 @@ var tabcontents = document.getElementsByClassName("tab-contents");
   function closemenu(){
     sidemenu.style.right = "255";
   }
- */
+
 
 //MENU BUTTON
-const menuBtn = document.querySelector('.menu-btn');
+/* const menuBtn = document.querySelector('.menu-btn');
 const hamburger = document.querySelector('.menu-btn__burger');
 const nav = document.querySelector('.nav');
 const menuNav = document.querySelector('.menu-nav');
@@ -52,4 +52,4 @@ function toggleMenu() {
 
     showMenu = false;
   }
-}
+} */
