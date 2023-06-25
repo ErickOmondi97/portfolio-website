@@ -202,6 +202,9 @@
 .about .container .row .about-col-2 {
   flex-basis: 60%;
 }
+.about .container .row .about-col-2 p {
+  font-size: 12pt;
+}
 .about .container .row .subtitle {
   text-align: center;
 }
@@ -488,16 +491,30 @@
   translate: transformY(-5px);
 }
 
+.nav .fas {
+  display: none;
+}
+
 @media only screen and (max-width: 600px) {
   #header {
     background-image: url(/images/9.jpg);
-    height: 100vh;
+    height: 50vh;
     width: 100%;
     justify-self: center;
+  }
+  .container {
+    padding: 10% 10%;
+  }
+  .container .header-text .subtitle {
+    font-size: 30px;
+    padding-right: 50px;
   }
   .header-text {
     margin-top: 100%;
     font-size: 16px;
+  }
+  .header-text .subtitle {
+    font-size: 30px;
   }
   .header-text h1 {
     font-size: 30px;
@@ -511,13 +528,52 @@
     left: 50%;
     transform: translate(10%, -150px);
   }
-  #about .row .about .container-col-2 {
+  .nav .fas {
+    display: block;
+    font-size: 25px;
+  }
+  .nav ul {
+    background: #006eff;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+  }
+  .nav ul li a {
+    display: block;
+    margin: 5px;
+  }
+  .nav ul .fas {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+  #about .row {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #about .row .about-col-2 {
     font-size: 16pt;
+    display: grid;
+    grid-template-columns: 1fr;
   }
-  #about .row .about .container-col-2 .subtitle {
-    font-size: 60px;
+  #about .row .about-col-2 .subtitle {
+    display: block;
+    font-size: 30px;
   }
-  #about .row .about .container .tab-links {
+  #about .row .about-col-2 .tab-contents ul li span {
+    font-size: 16px;
+  }
+  #about .row .about-col-2 p {
+    display: grid;
+    margin-top: 10px;
+    font-size: 14pt;
+  }
+  #about .row .about .tab-links {
     font-size: 16px;
     margin-right: 20px;
   }
@@ -527,6 +583,10 @@
   #about .row .about .about-col-1 {
     margin-bottom: 30px;
     font-size: 16pt;
+  }
+  #about img {
+    width: 75%;
+    border-radius: 15px;
   }
   .about .container .tab-titles {
     display: flex;
