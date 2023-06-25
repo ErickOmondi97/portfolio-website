@@ -7,7 +7,7 @@
   <title>Erick Omondi | Web Developer</title>
   <link rel="stylesheet" href="/css/main.css">
   <script src="https://kit.fontawesome.com/85bc907f45.js" crossorigin="anonymous"></script>
-  <link rel="icon" href="/images/profile.jpg" type="image/x-icon">
+  <link rel="icon" href="/images/profile.png" type="image/x-icon">
 </head>
 <body>
   <header>
@@ -24,9 +24,9 @@
             <li class="menu-nav__item"><a href="about.html" class="menu-nav__link">About</a></li>
             <li class="menu-nav__item"><a href="projects.html" class="menu-nav__link">Projects</a></li>
             <li class="menu-nav__item"><a href="contact.html" class="menu-nav__link">Contacts</a></li>
-            <i class="fas fa-times"></i>
+            <i class="fas fa-times" onclick="closemenu()"></i>
           </ul>
-          <i class="fas fa-bars"></i>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
         </nav>
 
         <div class="header-text">
@@ -186,7 +186,8 @@
   <p>Copyright &copy; Erick Omondi</p>
 </footer>
 
+<script src="/js/main.js"></script>
 </body>
 
-<script src="/js/main.js"></script>
+
 </html>
