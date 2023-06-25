@@ -12,16 +12,16 @@ var tabcontents = document.getElementsByClassName("tab-contents");
     event.currentTarget.classList.add("active-link");
     document.getElementById(tabname).classList.add("active-tab");
   }
+ 
 
-
-    //ALT FOR MENU BUTTON
-  var sidemenu = document.getElementById("sidemenu");
+    //FOR MENU BUTTON
+  var sidemeu = document.getElementById("sidemenu");
 
   function openmenu(){
-    sidemenu.style.right = "0";
+    sidemeu.style.right = "0";
   }
   function closemenu(){
-    sidemenu.style.right = "255";
+    sidemeu.style.right = "-200px";
   }
 
 
