@@ -572,6 +572,8 @@
     display: grid;
     margin-top: 10px;
     font-size: 14pt;
+    width: 85%;
+    height: 100%;
   }
   #about .row .about .tab-links {
     font-size: 16px;
