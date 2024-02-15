@@ -121,7 +121,7 @@
   flex-wrap: wrap;
 }
 #about .row .about-col-1 {
-  flex-basis: 35%;
+  flex-basis: 40%;
 }
 #about .row .about-col-2 {
   flex-basis: 60%;
@@ -169,8 +169,9 @@
   font-size: 14px;
 }
 #about img {
-  width: 75%;
-  border-radius: 15px;
+  width: 90%;
+  border-radius: 10px;
+  margin-top: 30%;
 }
 
 #header-about {
@@ -290,6 +291,7 @@
 .services-list div:hover {
   background: #006eff;
   transform: translateY(-10px);
+  cursor: pointer;
 }
 .services-list h2 {
   font-size: 30px;
@@ -369,7 +371,6 @@
 .btn {
   display: block;
   margin: 50px auto;
-  width: -moz-fit-content;
   width: fit-content;
   border: 1px solid #006eff;
   padding: 14px 50px;
@@ -610,7 +611,6 @@
     display: inline-block;
     margin: 50px 0;
     font-size: 14pt;
-    width: -moz-fit-content;
     width: fit-content;
     border: 1px solid #006eff;
     padding: 14px 50px;
@@ -648,7 +648,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Lexend", sans-serif;
+  font-family: BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   box-sizing: border-box;
 }
 
@@ -677,7 +677,6 @@ body {
 .btn-2 {
   display: block;
   margin: 50px 0;
-  width: -moz-fit-content;
   width: fit-content;
   border: 1px solid #006eff;
   padding: 14px 50px;
@@ -693,7 +692,6 @@ body {
 .btn-3 {
   display: block;
   margin: 50px 0;
-  width: -moz-fit-content;
   width: fit-content;
   border: 1px solid #006eff;
   padding: 14px 50px;
